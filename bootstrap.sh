@@ -89,17 +89,17 @@ packages() {
     kali)
       case $VERSION_ID in
         *)
-          echo -n ' make gcc libxrandr-dev pkgconf'
+          echo -n ' make gcc pkgconf libxss-dev'
         ;;
       esac
     ;;
     ubuntu)
       case $VERSION_ID in
         18.04)
-          echo -n ' make gcc libxrandr-dev pkgconf'
+          echo -n ' make gcc pkgconf libxss-dev'
         ;;
         20.04)
-          echo -n ' make gcc libxrandr-dev pkgconf'
+          echo -n ' make gcc pkgconf libxss-dev'
         ;;
         *)
           error "Unsupported version of $NAME: $VERSION_ID"
@@ -110,10 +110,10 @@ packages() {
     debian)
       case $VERSION_ID in
         10)
-          echo -n ' make gcc libxrandr-dev pkgconf'
+          echo -n ' make gcc pkgconf libxss-dev'
         ;;
         9)
-          echo -n ' make gcc libxrandr-dev pkgconf'
+          echo -n ' make gcc pkgconf libxss-dev'
         ;;
         *)
           error "Unsupported version of $NAME: $VERSION_ID"
@@ -121,7 +121,7 @@ packages() {
       esac
     ;;
     arch|artix)
-      echo -n ' make gcc pkgconf libxrandr'
+      echo -n ' make gcc pkgconf libxss'
     ;;
     *)
       error "Unsupported OS: $NAME"
